@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Puesto;
 use App\Models\Empleado;
-use App\Models\detalle_empleado_puesto;
+use App\Models\Detalle_empleado_puesto;
 use Illuminate\Http\RedirectResponse;
 use DateTime;
 use Illuminate\Http\Request;
