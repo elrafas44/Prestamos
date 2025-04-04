@@ -85,7 +85,7 @@ class CatalogosController extends Controller
     }
     public function empleadosPuestosGet(Request $request, $id_empleado)
     {
-        $puestos = detalle_empleado_puesto::join("puestos", "puestos.id_puesto", "=", "detalle_empleado_puesto.id_puesto")
+        $puestos = Detalle_empleado_puesto::join("puestos", "puestos.id_puesto", "=", "detalle_empleado_puesto.id_puesto")
         ->select("detalle_empleado_puesto.*", "puestos.nombre as puesto", "puestos.sueldo")
         ->where("detalle_empleado_puesto.id_empleado", "=", $id_empleado)
         ->get();
