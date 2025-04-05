@@ -6,6 +6,7 @@ use App\Models\Empleado;
 use App\Models\Detalle_empleado_puesto;
 use Illuminate\Http\RedirectResponse;
 use DateTime;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
