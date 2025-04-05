@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Abono;
 use App\Models\Prestamo;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use DateTime;
 use Francerz\PowerData\Index;
 use Illuminate\Http\Request; // Corregido: añadido "Request" completo
